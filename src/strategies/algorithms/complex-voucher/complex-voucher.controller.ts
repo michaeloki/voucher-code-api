@@ -11,9 +11,9 @@ export class ComplexVoucherController {
       if (code <= 100000) {
         codes.push(
           this._randomAlphabets() +
-          '-' +
-          complexPrefix.substring(0, prefixLength - code.toString().length) +
-          code,
+            '-' +
+            complexPrefix.substring(0, prefixLength - code.toString().length) +
+            code,
         );
       }
     }
