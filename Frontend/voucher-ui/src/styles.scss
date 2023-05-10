@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+.canvas-bkg {
+  background-color: #3bb76e;
+}
+
+.search-bar {
+  text-align: center;
+}
+
+.spacing {
+  margin: 1%;
+}
+
+.search-width {
+  width: 60%;
+  color: #ffffff;
+}
+
+.dropdown-width {
+  width: 20%;
+}
+
+
+
+
+.canvas-color {
+  background-color: #001f3f !important;
+  color: #ffffff !important;
+}
+
+
+.white-text {
+  color: #ffffff !important;
+}
+
+.custom-header-style {
+  background-color: #001f3f !important;
+  color: #fff !important;
+  border-color: #fff;
+}
+
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
