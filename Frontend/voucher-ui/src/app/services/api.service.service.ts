@@ -11,7 +11,6 @@ export class ApiService {
   voucherUrl = '/api/getVouchers';
 
   constructor(private httpClient: HttpClient) {
-
   }
 
   getAllVouchers() {
@@ -24,9 +23,7 @@ export class ApiService {
     let errorMessage = '';
     if (error.error instanceof ErrorEvent) {
       errorMessage = error.error.message;
-      console.log('see error ', errorMessage);
     } else {
-      // Get server-side error
       errorMessage = `Error Code: ${error.status}\n Message: ${error.message}`;
     }
     window.alert(errorMessage);
