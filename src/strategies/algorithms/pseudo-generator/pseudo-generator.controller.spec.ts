@@ -9,7 +9,9 @@ describe('PseudoGeneratorController', () => {
       controllers: [PseudoGeneratorController],
     }).compile();
 
-    controller = module.get<PseudoGeneratorController>(PseudoGeneratorController);
+    controller = module.get<PseudoGeneratorController>(
+      PseudoGeneratorController,
+    );
   });
 
   it('should be defined', () => {
