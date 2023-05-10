@@ -1,12 +1,14 @@
 <span class="canvas-bkg">
 <div class="spacing">
 <mat-card class="custom-header-style">
-    <form class="search-bar">
-        <mat-form-field class="dropdown-width" appearance="fill">
-            <mat-label>List of vouchers</mat-label>
-          </mat-form-field>
-      <mat-form-field class="search-width" appearance="fill">
-        <mat-label>Location</mat-label>
+<!--    <form class="search-bar">-->
+<!--        <mat-form-field class="dropdown-width" appearance="fill">-->
+<!--            <mat-label>List of vouchers</mat-label>-->
+<!--          </mat-form-field>-->
+<!--      <mat-form-field class="search-width" appearance="fill">-->
+<!--        <mat-label>Location</mat-label>-->
+<!--              </mat-form-field>-->
+<!--    </form>-->
             <tr *ngFor="let voucher of voucherList | slice:pageStart:100">
     <td>{{ voucher }}</td>
   </tr>
@@ -14,8 +16,7 @@
             <button *ngIf="pageStart >= 100" (click)="prevPage()">Previous</button>
             <button *ngIf="pageStart < voucherList.length" (click)="nextPage()">Next</button>
         </div>
-      </mat-form-field>
-    </form>
+
 </mat-card>
 </div>
 </span>
