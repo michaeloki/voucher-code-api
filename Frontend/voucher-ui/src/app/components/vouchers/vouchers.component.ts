@@ -1,4 +1,4 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ApiService} from "../../services/api.service.service";
 
 @Component({
@@ -9,7 +9,7 @@ import {ApiService} from "../../services/api.service.service";
 export class VouchersComponent implements OnInit {
 
   voucherList: any;
-  showButtons = false;
+  pageNumber: number = 1;
 
   constructor(private apiService: ApiService) {
   }
@@ -19,19 +19,6 @@ export class VouchersComponent implements OnInit {
   getAllVouchers() {
     return this.apiService.getAllVouchers().subscribe((data: {}) => {
       this.voucherList = data;
-      this.showButtons = true;
     });
-  }
-
-  pageStart = 0;
-  pageEnd = 0;
-
-
-  nextPage() {
-    this.pageStart += 100;
-  }
-
-  prevPage() {
-    this.pageEnd -= 100;
   }
 }

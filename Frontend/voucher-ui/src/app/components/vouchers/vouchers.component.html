@@ -1,22 +1,10 @@
 <span class="canvas-bkg">
 <div class="spacing">
 <mat-card class="custom-header-style">
-<!--    <form class="search-bar">-->
-<!--        <mat-form-field class="dropdown-width" appearance="fill">-->
-<!--            <mat-label>List of vouchers</mat-label>-->
-<!--          </mat-form-field>-->
-<!--      <mat-form-field class="search-width" appearance="fill">-->
-<!--        <mat-label>Location</mat-label>-->
-<!--              </mat-form-field>-->
-<!--    </form>-->
-            <tr *ngFor="let voucher of voucherList | slice:pageStart:100">
+  <tr *ngFor="let voucher of voucherList| paginate: { itemsPerPage: 50, currentPage: pageNumber }">
     <td>{{ voucher }}</td>
   </tr>
-        <div *ngIf="showButtons">
-            <button *ngIf="pageStart >= 100" (click)="prevPage()">Previous</button>
-            <button *ngIf="pageStart < voucherList.length" (click)="nextPage()">Next</button>
-        </div>
-
 </mat-card>
+  <pagination-controls (pageChange)="pageNumber = $event"></pagination-controls>
 </div>
 </span>
