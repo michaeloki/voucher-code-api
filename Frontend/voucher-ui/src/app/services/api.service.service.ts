@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import {catchError, retry} from 'rxjs/operators';
 import { baseUrl } from '../constants/constants';
 import {throwError} from "rxjs";
@@ -23,12 +23,11 @@ export class ApiService {
   handleError(error: any) {
     let errorMessage = '';
     if (error.error instanceof ErrorEvent) {
-      // Get client-side error
       errorMessage = error.error.message;
       console.log('see error ', errorMessage);
     } else {
       // Get server-side error
-      errorMessage = `Error Code: ${error.status}\nMessage: ${error.message}`;
+      errorMessage = `Error Code: ${error.status}\n Message: ${error.message}`;
     }
     window.alert(errorMessage);
     return throwError(() => {
