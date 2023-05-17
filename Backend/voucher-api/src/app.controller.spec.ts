@@ -1,7 +1,7 @@
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { AppController } from "./app.controller";
+import { AppService } from "./app.service";
 
-describe('AppController', () => {
+describe("AppController", () => {
   let appController;
   let appService;
 
@@ -10,16 +10,16 @@ describe('AppController', () => {
     appController = new AppController(appService);
   });
 
-  describe('getHello', () => {
-    it('should return a string', () => {
-      expect(typeof appController.getHello()).toEqual('string');
+  describe("getHello", () => {
+    it("should return a string", () => {
+      expect(typeof appController.getHello()).toEqual("string");
     });
   });
 
-  describe('getVouchers', () => {
-    it('should return an object', async () => {
+  describe("getVouchers", () => {
+    it("should return an object", async () => {
       const result = await appController.getVouchers();
-      expect(typeof result).toEqual('object');
+      expect(typeof result).toEqual("object");
     });
   });
 });

@@ -1,0 +1,6 @@
+[
+  {
+    "caller": "[anonymous]#[anonymous]",
+    "callee": "StrategyManager#algorithmSelector"
+  }
+]

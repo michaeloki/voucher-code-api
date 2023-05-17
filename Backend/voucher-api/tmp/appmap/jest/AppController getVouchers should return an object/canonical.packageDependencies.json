@@ -1,0 +1,10 @@
+[
+  {
+    "caller": "[anonymous]",
+    "callee": "StrategyManager"
+  },
+  {
+    "caller": "[anonymous]",
+    "callee": "jsonStrategy"
+  }
+]

@@ -1,0 +1,211 @@
+{
+  "events": [
+    {
+      "event": "call",
+      "thread_id": 0,
+      "id": 1,
+      "path": "./src/app.controller.spec.ts#0",
+      "lineno": 8,
+      "defined_class": "[anonymous]",
+      "static": false,
+      "method_id": "[anonymous]",
+      "receiver": {
+        "name": "this",
+        "class": "undefined",
+        "value": "undefined"
+      }
+    },
+    {
+      "event": "return",
+      "thread_id": 0,
+      "id": 2,
+      "parent_id": 1,
+      "elapsed": 0.000029999999999745342,
+      "return_value": {
+        "name": "return",
+        "class": "undefined",
+        "value": "undefined"
+      }
+    },
+    {
+      "event": "call",
+      "thread_id": 0,
+      "id": 3,
+      "path": "./src/app.controller.spec.ts#0",
+      "lineno": 20,
+      "defined_class": "[anonymous]",
+      "static": false,
+      "method_id": "[anonymous]",
+      "receiver": {
+        "name": "this",
+        "class": "undefined",
+        "value": "undefined"
+      }
+    },
+    {
+      "event": "call",
+      "thread_id": 0,
+      "id": 4,
+      "path": "./src/strategies/strategies.ts#0",
+      "lineno": 2,
+      "defined_class": "jsonStrategy",
+      "static": false,
+      "method_id": "deserialize",
+      "receiver": {
+        "name": "this",
+        "class": "undefined",
+        "value": "undefined"
+      },
+      "parameters": [
+        {
+          "name": "data",
+          "class": "string",
+          "value": "\"{\\n  \\\"name\\\": \\\"vouchers\\\",\\n  \\\"quantity\\\": 1000,\\n  \\\"algorithm\\\": \\\"sequentialnumbers\\\"\\n}\\n\""
+        }
+      ]
+    },
+    {
+      "event": "return",
+      "thread_id": 0,
+      "id": 5,
+      "parent_id": 4,
+      "elapsed": 0.0004880000000002838,
+      "return_value": {
+        "name": "return",
+        "class": "Object",
+        "object_id": 10,
+        "value": "[object Object]",
+        "size": 3,
+        "properties": [
+          {
+            "name": "name",
+            "class": "string"
+          },
+          {
+            "name": "quantity",
+            "class": "number"
+          },
+          {
+            "name": "algorithm",
+            "class": "string"
+          }
+        ]
+      }
+    },
+    {
+      "event": "call",
+      "thread_id": 0,
+      "id": 6,
+      "path": "./src/context/strategyManager.ts#0",
+      "lineno": 10,
+      "defined_class": "StrategyManager",
+      "static": false,
+      "method_id": "algorithmSelector",
+      "receiver": {
+        "name": "this",
+        "class": "StrategyManager",
+        "object_id": 11,
+        "value": "[object Object]"
+      },
+      "parameters": [
+        {
+          "name": "name: string",
+          "class": "string",
+          "value": "\"vouchers\""
+        },
+        {
+          "name": "algorithmType: string",
+          "class": "string",
+          "value": "\"sequentialnumbers\""
+        },
+        {
+          "name": "voucherQuantity: number",
+          "class": "number",
+          "value": "1000"
+        }
+      ]
+    },
+    {
+      "event": "return",
+      "thread_id": 0,
+      "id": 7,
+      "parent_id": 6,
+      "elapsed": 0.0005159999999996217,
+      "return_value": {
+        "name": "return",
+        "class": "Array",
+        "object_id": 13,
+        "value": "000001,000002,000003,000004,000005,000006,000007,000008,000009,000010,000011,000012,000013,00001 ...",
+        "size": 1000
+      }
+    },
+    {
+      "event": "return",
+      "thread_id": 0,
+      "id": 8,
+      "parent_id": 3,
+      "elapsed": 0.007634000000000015,
+      "return_value": {
+        "name": "return",
+        "class": "undefined",
+        "value": "undefined"
+      }
+    }
+  ],
+  "version": "1.8.0",
+  "metadata": {
+    "name": "AppController getVouchers should return an object",
+    "app": "voucher-api",
+    "labels": [],
+    "language": {
+      "name": "javascript",
+      "version": "ES.Next",
+      "engine": "node@18.16.0"
+    },
+    "frameworks": [],
+    "client": {
+      "name": "@appland/appmap-agent-js",
+      "version": "13.8.0",
+      "url": "https://github.com/getappmap/appmap-agent-js.git/#readme"
+    },
+    "recorder": {
+      "name": "jest"
+    },
+    "test_status": "succeeded"
+  },
+  "classMap": [
+    {
+      "type": "class",
+      "name": "[anonymous]",
+      "children": [
+        {
+          "type": "function",
+          "name": "[anonymous]",
+          "static": false
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "jsonStrategy",
+      "children": [
+        {
+          "type": "function",
+          "name": "deserialize",
+          "static": false
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "StrategyManager",
+      "children": [
+        {
+          "type": "function",
+          "name": "algorithmSelector",
+          "static": false
+        }
+      ]
+    }
+  ]
+}

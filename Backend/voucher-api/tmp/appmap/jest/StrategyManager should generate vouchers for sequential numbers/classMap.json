@@ -1,0 +1,24 @@
+[
+  {
+    "type": "class",
+    "name": "[anonymous]",
+    "children": [
+      {
+        "type": "function",
+        "name": "[anonymous]",
+        "static": false
+      }
+    ]
+  },
+  {
+    "type": "class",
+    "name": "StrategyManager",
+    "children": [
+      {
+        "type": "function",
+        "name": "algorithmSelector",
+        "static": false
+      }
+    ]
+  }
+]

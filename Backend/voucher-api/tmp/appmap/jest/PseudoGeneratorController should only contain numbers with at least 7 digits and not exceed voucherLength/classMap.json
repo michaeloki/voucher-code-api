@@ -1,0 +1,13 @@
+[
+  {
+    "type": "class",
+    "name": "[anonymous]",
+    "children": [
+      {
+        "type": "function",
+        "name": "[anonymous]",
+        "static": false
+      }
+    ]
+  }
+]

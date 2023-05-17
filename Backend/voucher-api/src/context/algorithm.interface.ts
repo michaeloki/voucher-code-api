@@ -1,3 +1,3 @@
 export interface AlgorithmInterface {
-  generateCode: (voucherQuantity: any) => Array<any>[];
+  generateCode: (voucherQuantity: number) => void;
 }

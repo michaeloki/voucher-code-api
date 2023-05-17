@@ -1,0 +1,150 @@
+{
+  "events": [
+    {
+      "event": "call",
+      "thread_id": 0,
+      "id": 1,
+      "path": "./src/context/strategyManager.spec.ts#0",
+      "lineno": 5,
+      "defined_class": "[anonymous]",
+      "static": false,
+      "method_id": "[anonymous]",
+      "receiver": {
+        "name": "this",
+        "class": "undefined",
+        "value": "undefined"
+      }
+    },
+    {
+      "event": "return",
+      "thread_id": 0,
+      "id": 2,
+      "parent_id": 1,
+      "elapsed": 0.00004100000000016735,
+      "return_value": {
+        "name": "return",
+        "class": "undefined",
+        "value": "undefined"
+      }
+    },
+    {
+      "event": "call",
+      "thread_id": 0,
+      "id": 3,
+      "path": "./src/context/strategyManager.spec.ts#0",
+      "lineno": 22,
+      "defined_class": "[anonymous]",
+      "static": false,
+      "method_id": "[anonymous]",
+      "receiver": {
+        "name": "this",
+        "class": "undefined",
+        "value": "undefined"
+      }
+    },
+    {
+      "event": "call",
+      "thread_id": 0,
+      "id": 4,
+      "path": "./src/context/strategyManager.ts#0",
+      "lineno": 10,
+      "defined_class": "StrategyManager",
+      "static": false,
+      "method_id": "algorithmSelector",
+      "receiver": {
+        "name": "this",
+        "class": "StrategyManager",
+        "object_id": 5,
+        "value": "[object Object]"
+      },
+      "parameters": [
+        {
+          "name": "name: string",
+          "class": "string",
+          "value": "\"vouchers\""
+        },
+        {
+          "name": "algorithmType: string",
+          "class": "string",
+          "value": "\"complexvouchers\""
+        },
+        {
+          "name": "voucherQuantity: number",
+          "class": "number",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "event": "return",
+      "thread_id": 0,
+      "id": 5,
+      "parent_id": 4,
+      "elapsed": 0.0009090000000005603,
+      "return_value": {
+        "name": "return",
+        "class": "Array",
+        "object_id": 7,
+        "value": "FFOCLRYM-000001,YEBMXPOK-000002,ZBKKVIYR-000003,CMHYVHYH-000004,GXSYELIM-000005",
+        "size": 5
+      }
+    },
+    {
+      "event": "return",
+      "thread_id": 0,
+      "id": 6,
+      "parent_id": 3,
+      "elapsed": 0.012826999999999316,
+      "return_value": {
+        "name": "return",
+        "class": "undefined",
+        "value": "undefined"
+      }
+    }
+  ],
+  "version": "1.8.0",
+  "metadata": {
+    "name": "StrategyManager should generate vouchers for complex codes",
+    "app": "voucher-api",
+    "labels": [],
+    "language": {
+      "name": "javascript",
+      "version": "ES.Next",
+      "engine": "node@18.16.0"
+    },
+    "frameworks": [],
+    "client": {
+      "name": "@appland/appmap-agent-js",
+      "version": "13.8.0",
+      "url": "https://github.com/getappmap/appmap-agent-js.git/#readme"
+    },
+    "recorder": {
+      "name": "jest"
+    },
+    "test_status": "succeeded"
+  },
+  "classMap": [
+    {
+      "type": "class",
+      "name": "[anonymous]",
+      "children": [
+        {
+          "type": "function",
+          "name": "[anonymous]",
+          "static": false
+        }
+      ]
+    },
+    {
+      "type": "class",
+      "name": "StrategyManager",
+      "children": [
+        {
+          "type": "function",
+          "name": "algorithmSelector",
+          "static": false
+        }
+      ]
+    }
+  ]
+}

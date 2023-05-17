@@ -1,0 +1,10 @@
+[
+  {
+    "caller": "[anonymous]#[anonymous]",
+    "callee": "StrategyManager#algorithmSelector"
+  },
+  {
+    "caller": "[anonymous]#[anonymous]",
+    "callee": "jsonStrategy#deserialize"
+  }
+]
