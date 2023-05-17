@@ -8,7 +8,7 @@ import {throwError} from "rxjs";
   providedIn: 'root'
 })
 export class ApiService {
-  voucherUrl = '/api/getVouchers';
+  voucherUrl = '/api/getSimpleVoucher/100';
 
   constructor(private httpClient: HttpClient) {
   }
