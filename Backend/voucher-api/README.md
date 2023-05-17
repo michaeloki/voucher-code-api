@@ -1,11 +1,6 @@
 
 ## Description
-Write a program in Typescript using OOP to run on NodeJS, which when run would generate a list of token/voucher codes
-based on a type of voucher specified in a configuration. Configuration must be provided as a separate file in any
-format of your choice.
-
-The config file is in JSON and the two "algorithms" are "sequentialumbers" and "complexvouchers".
-
+A NestJs backend for generating voucher codes.
 The strategy design pattern was used to design this API.
 
 
