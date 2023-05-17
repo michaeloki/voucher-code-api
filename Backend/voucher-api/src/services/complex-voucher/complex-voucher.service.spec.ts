@@ -17,7 +17,7 @@ describe("ComplexVoucherService", () => {
     expect(service.generateCode(10)).toBeDefined();
   });
 
-  it("should return an observable of an arry of strings", (done) => {
+  it("should return an observable of an array of strings", (done) => {
     const observer = {
       next: (value: Array<string>) => {
         expect(Array.isArray(value)).toBe(true);

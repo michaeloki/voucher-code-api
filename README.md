@@ -1,2 +1,3 @@
 # voucher-code-api
-The updated code is on the main branch.
+A full-stack web app for generating voucher codes.
+The strategy design pattern was used to design this API.
