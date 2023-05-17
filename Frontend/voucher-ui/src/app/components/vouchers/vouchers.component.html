@@ -1,9 +1,18 @@
 <span class="canvas-bkg">
 <div class="spacing">
 <mat-card class="custom-header-style">
-  <tr *ngFor="let voucher of voucherList| paginate: { itemsPerPage: 50, currentPage: pageNumber }">
-    <td>{{ voucher }}</td>
-  </tr>
+  <mat-card-title>Voucher List</mat-card-title>
+  <mat-list>
+    <ul>
+    <span *ngFor="let voucher of voucherList| paginate: { itemsPerPage: 50, currentPage: pageNumber }">
+    <mat-list-item >
+      <mat-icon matListItemIcon>confirmation_number</mat-icon>
+      <li>{{voucher}}</li>
+    </mat-list-item>
+      <mat-divider></mat-divider>
+    </span>
+    </ul>
+  </mat-list>
 </mat-card>
   <pagination-controls (pageChange)="pageNumber = $event"></pagination-controls>
 </div>

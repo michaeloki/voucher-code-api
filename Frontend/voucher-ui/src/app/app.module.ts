@@ -15,6 +15,7 @@ import {MatAutocompleteModule} from "@angular/material/autocomplete";
 import {MatInputModule} from "@angular/material/input";
 import {MatCardModule} from "@angular/material/card";
 import { NgxPaginationModule } from 'ngx-pagination';
+import {MatListModule} from "@angular/material/list";
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
     MatAutocompleteModule,
     MatInputModule,
     MatCardModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
