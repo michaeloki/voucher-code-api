@@ -16,6 +16,9 @@ import {MatInputModule} from "@angular/material/input";
 import {MatCardModule} from "@angular/material/card";
 import { NgxPaginationModule } from 'ngx-pagination';
 import {MatListModule} from "@angular/material/list";
+import {MatSlideToggleModule} from "@angular/material/slide-toggle";
+import {MatRadioModule} from "@angular/material/radio";
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,6 +30,7 @@ import {MatListModule} from "@angular/material/list";
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     FormsModule,
     MatSnackBarModule,
@@ -37,7 +41,9 @@ import {MatListModule} from "@angular/material/list";
     MatInputModule,
     MatCardModule,
     NgxPaginationModule,
-    MatListModule
+    MatListModule,
+    MatSlideToggleModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]

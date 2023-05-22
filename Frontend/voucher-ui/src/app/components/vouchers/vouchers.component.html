@@ -2,16 +2,37 @@
 <div class="spacing">
 <mat-card class="custom-header-style">
   <mat-card-title>Voucher List</mat-card-title>
+  <div *ngIf="voucherTextChange>0">
+    <label id="voucher-radio-group-label">Pick a voucher type</label>
+<mat-radio-group
+  aria-labelledby="voucher-radio-group-label"
+  class="voucher-radio-group"
+  [(ngModel)]="favoriteVoucherType" >
+  <mat-radio-button class="voucher-radio-group" *ngFor="let voucherType of voucherTypes" [value]="voucherType" (change)="onItemChange($event.value)">
+    {{voucherType}}
+  </mat-radio-button>
+</mat-radio-group>
+  </div>
+<form [formGroup]="voucherForm">
+  <p>
+    <label for="voucherQuantity">Voucher Quantity </label>
+    <input type="number" id="voucherQuantity" matInput #voucherQuantity class="formControl" name="voucherQuantity" required
+           formControlName="voucherQuantity" placeholder="Enter voucher quantity e.g. 50" (keyup)="onInputChange()" autocomplete="off">
+  </p>
+</form>
+
   <mat-list>
     <ul>
     <span *ngFor="let voucher of voucherList| paginate: { itemsPerPage: 50, currentPage: pageNumber }">
+      <li>
     <mat-list-item >
       <mat-icon matListItemIcon>confirmation_number</mat-icon>
-      <li>{{voucher}}</li>
+      {{voucher}}
     </mat-list-item>
+          </li>
       <mat-divider></mat-divider>
     </span>
-    </ul>
+      </ul>
   </mat-list>
 </mat-card>
   <pagination-controls (pageChange)="pageNumber = $event"></pagination-controls>

@@ -1,21 +1,27 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import {catchError, retry} from 'rxjs/operators';
-import { baseUrl } from '../constants/constants';
+import {baseUrl, complexVoucherEndpoint, simpleVoucherEndpoint} from '../constants/constants';
 import {throwError} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
-  voucherUrl = '/api/getSimpleVoucher/100';
+  endpointUrl = "";
 
   constructor(private httpClient: HttpClient) {
   }
 
-  getAllVouchers() {
+  getAllVouchers(voucherType: string, quantity: number) {
+    if (voucherType.toLowerCase() === "simple") {
+      this.endpointUrl = simpleVoucherEndpoint + quantity;
+    } else {
+      this.endpointUrl = complexVoucherEndpoint + quantity;
+    }
+
     return this.httpClient
-      .get( baseUrl+this.voucherUrl)
+      .get( baseUrl+this.endpointUrl)
       .pipe(retry(1), catchError(this.handleError));
   }
 
