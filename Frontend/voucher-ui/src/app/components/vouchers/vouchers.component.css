@@ -35,6 +35,43 @@ li::after {
 li + li {
   border-top: 1px solid rgba(255,255,255,0.2);
 }
+
+.form-label {
+  color: #ffffff !important;
+}
+
+.text-form {
+  background: #ffffff;
+  color: #000000;
+}
+
+.input-form {
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+/*#form {*/
+/*  background-color: green;*/
+/*}*/
+
+.white {
+  color: #fff;
+}
+
+.mat-form-field.mat-focused .mat-form-field-ripple {
+  background-color: #69f0ae !important;
+}
+
+.mat-form-field-underline {
+  background-color: white !important;
+}
+.mat-form-field-ripple {
+  background-color: white !important;
+}
+
 /*@use postcss-preset-env {*/
 /*  stage: 0;*/
 /*  autoprefixer: {*/
